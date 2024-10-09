@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"gorm.io/driver/sqlserver"
+	"github.com/alvinadet/sqlserver"
 	"gorm.io/gorm"
 )
 
-var sqlserverDSN = "sqlserver://gorm:LoremIpsum86@localhost:9930?database=gorm"
+var sqlserverDSN = "sqlserver://sa@localhost:1433?database=gorm&password=iwakpitik@123"
 
 func init() {
 	if dbDSN := os.Getenv("GORM_DSN"); dbDSN != "" {
